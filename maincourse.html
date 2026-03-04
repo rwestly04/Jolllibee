@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jollibee - Main Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="jollibee.png" class="logo">
+    <h1>Jollibee</h1>
+    <nav>
+        <a href="maincourse.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="dessert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2>Main Course Menu</h2>
+
+    <div class="item">
+        <img src="chickenjoy.jpg">
+        <div class="details">
+            <span>Chickenjoy - ₱120</span>
+            <input type="number" id="item1" min="0" value="0">
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="spaghetti.jpg">
+        <div class="details">
+            <span>JollySpaghetti - ₱95</span>
+            <input type="number" id="item2" min="0" value="0">
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="burger.jpg">
+        <div class="details">
+            <span>Yumburger - ₱40</span>
+            <input type="number" id="item3" min="0" value="0">
+        </div>
+    </div>
+
+    <hr>
+
+    <label>Enter Age:</label>
+    <input type="number" id="age" min="0">
+
+    <button onclick="computeTotal()">Compute Total</button>
+
+    <div class="result">
+        <p>Original Total: ₱ <span id="originalTotal">0.00</span></p>
+        <p>Discount (12% Senior): ₱ <span id="discount">0.00</span></p>
+        <p class="final">Final Payable: ₱ <span id="finalTotal">0.00</span></p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
